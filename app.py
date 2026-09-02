@@ -127,7 +127,9 @@ tools = [date_time_tool,simple_reply_tool,math_tool,translation_agent_tool]
 
 # ── LLM ───────────────────────────────────────────────────────────
 
-base_llm = ChatMistralAI(model="mistral-small-latest")
+# temperature=0 keeps RAG answers deterministic — at the default temperature
+# the model randomly replies NOT_FOUND even when the answer is in the context.
+base_llm = ChatMistralAI(model="mistral-small-latest", temperature=0)
 tool_llm = base_llm.bind_tools(tools)
 
 # ── Langraph ───────────────────────────────────────────────────────────

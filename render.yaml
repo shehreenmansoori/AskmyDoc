@@ -8,7 +8,7 @@ services:
     healthCheckPath: /
     envVars:
       - key: PYTHON_VERSION
-        value: 3.13.15
+        value: 3.13.5
       - key: MISTRAL_API_KEY
         sync: false
       - key: QDRANT_URL

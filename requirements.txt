@@ -24,7 +24,7 @@ langgraph==1.2.11
 duckduckgo-search==8.1.1
 ddgs==9.16.0
 
-pydantic==2.10.5
+pydantic==2.13.5
 pydantic-settings==2.15.0
 
 python-dotenv==1.2.2
