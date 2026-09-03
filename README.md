@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-# DocuMind
+# AskmyDoc
 ### Multi-Tool LangGraph Document Intelligence & Hybrid RAG Engine
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
@@ -121,8 +121,8 @@ sequenceDiagram
 
 ### 2. Clone & Install
 ```bash
-git clone https://github.com/shehreenmansoori/Doc-Chatbot.git
-cd Doc-Chatbot
+git clone https://github.com/shehreenmansoori/AskmyDoc.git
+cd AskmyDoc
 
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -153,7 +153,7 @@ The repository contains a native `render.yaml` configuration for automated deplo
 ```yaml
 services:
   - type: web
-    name: doc-chatbot
+    name: AskmyDoc
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
