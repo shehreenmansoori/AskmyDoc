@@ -1,8 +1,9 @@
 ﻿<div align="center">
 
-# AskmyDoc
+# DocuMind
 ### Multi-Tool LangGraph Document Intelligence & Hybrid RAG Engine
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=flat-square&logo=render&logoColor=black)](https://doc-chatbot-1.onrender.com/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Orchestration: LangGraph](https://img.shields.io/badge/Orchestrator-LangGraph%20StateGraph-1C7C54?style=flat-square)](https://langchain-ai.github.io/langgraph/)
 [![Vector DB: Qdrant](https://img.shields.io/badge/Vector%20DB-Qdrant%20Cloud-DC2626?style=flat-square&logo=qdrant&logoColor=white)](https://qdrant.tech/)
@@ -15,7 +16,7 @@
   <b>Hybrid document reasoning combining PyMuPDF chunking, dense vector retrieval, autonomous LangGraph tool routing, live web fallback, and MongoDB session persistence.</b>
 </p>
 
-[**Architecture**](#state-machine-architecture) | [**Hybrid Retrieval**](#dual-tier-retrieval--fallback) | [**Engineering Specs**](#engineering-specifications) | [**Quickstart**](#quickstart)
+[**Live Demo**](https://doc-chatbot-1.onrender.com/) | [**Architecture**](#state-machine-architecture) | [**Hybrid Retrieval**](#dual-tier-retrieval--fallback) | [**Engineering Specs**](#engineering-specifications) | [**Quickstart**](#quickstart)
 
 </div>
 
@@ -121,8 +122,8 @@ sequenceDiagram
 
 ### 2. Clone & Install
 ```bash
-git clone https://github.com/shehreenmansoori/AskmyDoc.git
-cd AskmyDoc
+git clone https://github.com/shehreenmansoori/Doc-Chatbot.git
+cd Doc-Chatbot
 
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -153,7 +154,7 @@ The repository contains a native `render.yaml` configuration for automated deplo
 ```yaml
 services:
   - type: web
-    name: AskmyDoc
+    name: doc-chatbot
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
